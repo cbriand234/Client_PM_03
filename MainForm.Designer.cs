@@ -46,18 +46,30 @@
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.PhotoBrowser = new PhotoManagerClient.PhotosBrowser();
+            this.plus = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.CB_ = new System.Windows.Forms.CheckBox();
+            this.CB_Keyword = new System.Windows.Forms.CheckBox();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.MS_Account.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
+            this.groupBox4.SuspendLayout();
+            this.groupBox5.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.CB_);
             this.groupBox1.Controls.Add(this.CBX_UsersList);
             this.groupBox1.Location = new System.Drawing.Point(245, 27);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(227, 59);
+            this.groupBox1.Size = new System.Drawing.Size(227, 101);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Users";
@@ -65,7 +77,7 @@
             // CBX_UsersList
             // 
             this.CBX_UsersList.FormattingEnabled = true;
-            this.CBX_UsersList.Location = new System.Drawing.Point(6, 25);
+            this.CBX_UsersList.Location = new System.Drawing.Point(6, 53);
             this.CBX_UsersList.Name = "CBX_UsersList";
             this.CBX_UsersList.Size = new System.Drawing.Size(215, 28);
             this.CBX_UsersList.TabIndex = 0;
@@ -121,10 +133,11 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.CB_Keyword);
             this.groupBox2.Controls.Add(this.CBX_Keywords);
             this.groupBox2.Location = new System.Drawing.Point(478, 27);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(170, 59);
+            this.groupBox2.Size = new System.Drawing.Size(170, 101);
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Keyword";
@@ -132,7 +145,7 @@
             // CBX_Keywords
             // 
             this.CBX_Keywords.FormattingEnabled = true;
-            this.CBX_Keywords.Location = new System.Drawing.Point(6, 25);
+            this.CBX_Keywords.Location = new System.Drawing.Point(6, 53);
             this.CBX_Keywords.Name = "CBX_Keywords";
             this.CBX_Keywords.Size = new System.Drawing.Size(155, 28);
             this.CBX_Keywords.TabIndex = 0;
@@ -147,7 +160,7 @@
             this.groupBox3.Controls.Add(this.BTN_Left);
             this.groupBox3.Location = new System.Drawing.Point(995, 27);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(146, 59);
+            this.groupBox3.Size = new System.Drawing.Size(146, 101);
             this.groupBox3.TabIndex = 1;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Placement";
@@ -198,18 +211,25 @@
             // 
             // groupBox4
             // 
+            this.groupBox4.Controls.Add(this.plus);
+            this.groupBox4.Controls.Add(this.label2);
+            this.groupBox4.Controls.Add(this.label3);
+            this.groupBox4.Controls.Add(this.label4);
             this.groupBox4.Location = new System.Drawing.Point(12, 27);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(227, 59);
+            this.groupBox4.Size = new System.Drawing.Size(227, 101);
             this.groupBox4.TabIndex = 1;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Commands";
             // 
             // groupBox5
             // 
+            this.groupBox5.Controls.Add(this.textBox2);
+            this.groupBox5.Controls.Add(this.textBox1);
+            this.groupBox5.Controls.Add(this.checkBox1);
             this.groupBox5.Location = new System.Drawing.Point(654, 27);
             this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(336, 59);
+            this.groupBox5.Size = new System.Drawing.Size(336, 101);
             this.groupBox5.TabIndex = 1;
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "Date interval";
@@ -219,12 +239,90 @@
             this.PhotoBrowser.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.PhotoBrowser.Location = new System.Drawing.Point(12, 92);
+            this.PhotoBrowser.Location = new System.Drawing.Point(12, 134);
             this.PhotoBrowser.Name = "PhotoBrowser";
             this.PhotoBrowser.Placement = PhotoManagerClient.PhotoBrowserPlacement.Left;
             this.PhotoBrowser.SelectedPhoto = null;
-            this.PhotoBrowser.Size = new System.Drawing.Size(1129, 570);
+            this.PhotoBrowser.Size = new System.Drawing.Size(1129, 528);
             this.PhotoBrowser.TabIndex = 0;
+            // 
+            // plus
+            // 
+            this.plus.AutoSize = true;
+            this.plus.Location = new System.Drawing.Point(6, 23);
+            this.plus.Name = "plus";
+            this.plus.Size = new System.Drawing.Size(18, 20);
+            this.plus.TabIndex = 3;
+            this.plus.Text = "+";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(40, 22);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(37, 20);
+            this.label2.TabIndex = 4;
+            this.label2.Text = "Edit";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(83, 22);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(51, 20);
+            this.label3.TabIndex = 5;
+            this.label3.Text = "Erase";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(146, 22);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(81, 20);
+            this.label4.TabIndex = 6;
+            this.label4.Text = "Espionner";
+            // 
+            // CB_
+            // 
+            this.CB_.AutoSize = true;
+            this.CB_.Location = new System.Drawing.Point(6, 23);
+            this.CB_.Name = "CB_";
+            this.CB_.Size = new System.Drawing.Size(15, 14);
+            this.CB_.TabIndex = 1;
+            this.CB_.UseVisualStyleBackColor = true;
+            // 
+            // CB_Keyword
+            // 
+            this.CB_Keyword.AutoSize = true;
+            this.CB_Keyword.Location = new System.Drawing.Point(15, 23);
+            this.CB_Keyword.Name = "CB_Keyword";
+            this.CB_Keyword.Size = new System.Drawing.Size(84, 24);
+            this.CB_Keyword.TabIndex = 1;
+            this.CB_Keyword.Text = "Exclude";
+            this.CB_Keyword.UseVisualStyleBackColor = true;
+            // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Location = new System.Drawing.Point(6, 28);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(15, 14);
+            this.checkBox1.TabIndex = 1;
+            this.checkBox1.UseVisualStyleBackColor = true;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(137, 11);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(100, 26);
+            this.textBox1.TabIndex = 2;
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(137, 55);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(100, 26);
+            this.textBox2.TabIndex = 2;
             // 
             // MainForm
             // 
@@ -246,10 +344,16 @@
             this.Text = "Photo manager client application";
             this.Shown += new System.EventHandler(this.MainForm_Shown);
             this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.MS_Account.ResumeLayout(false);
             this.MS_Account.PerformLayout();
             this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
             this.groupBox3.ResumeLayout(false);
+            this.groupBox4.ResumeLayout(false);
+            this.groupBox4.PerformLayout();
+            this.groupBox5.ResumeLayout(false);
+            this.groupBox5.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -275,6 +379,15 @@
         private System.Windows.Forms.Button BTN_Left;
         private System.Windows.Forms.GroupBox groupBox4;
         private System.Windows.Forms.GroupBox groupBox5;
+        private System.Windows.Forms.Label plus;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.CheckBox CB_;
+        private System.Windows.Forms.CheckBox CB_Keyword;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.CheckBox checkBox1;
     }
 }
 
